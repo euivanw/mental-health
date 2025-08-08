@@ -1,0 +1,18 @@
+logging:
+  level:
+    web: DEBUG
+
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: always
+    include-exception: true
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/mental-health
+    username: postgres
+    password: admin
